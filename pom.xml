@@ -73,6 +73,27 @@
         </dependency>
     </dependencies>
 
+    <!-- nexus私有仓库 -->
+    <repositories>
+        <!--<repository>
+            <id>aliyun-nexus</id>
+            <name>Aliyun Public Repository</name>
+            <layout>default</layout>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>-->
+        <repository>
+            <id>nexus</id>
+            <name>Public Repository</name>
+            <url>http://192.168.1.16:8081/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <repository>
             <id>paascloud-lib-rep</id>
@@ -305,7 +326,7 @@
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-core</artifactId>
                 <version>1.3.5</version>
-                <scope>test</scope>
+                <!--<scope>test</scope>-->
             </dependency>
             <dependency>
                 <groupId>joda-time</groupId>
