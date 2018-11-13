@@ -6,7 +6,8 @@ spring:
           uri: https://github.com/paascloud/paascloud-config-repo.git
           search-paths: /*
           default-label: ${spring.profiles.active}
-          basedir: /data/config/paascloud-config-repo
+          #basedir: /data/config/paascloud-config-repo
+          basedir: /Users/caliven/paascloud/config/paascloud-config-repo
           username:
           password:
     inetutils:

@@ -38,6 +38,7 @@ public class PaasCloudUacApplication {
 
 	/**
 	 * The entry point of application.
+	 * 你好
 	 *
 	 * @param args the input arguments
 	 */

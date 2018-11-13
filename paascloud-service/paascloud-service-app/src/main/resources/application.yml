@@ -6,3 +6,6 @@ spring:
     active: dev
   application:
     name: @pom.artifactId@
+
+paascloud:
+  enableSqlLogInterceptor: false
